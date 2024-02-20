@@ -1,0 +1,31 @@
+#play,#back,#pause,#next{
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 55px;
+}
+#play:hover,#back:hover,#pause:hover,#next:hover{
+    color: #ffffffcc;
+}
+body{
+    background-color: #35404b;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 4px 4px 12px white;
+}
+#sure{
+    height: 200px;
+    overflow-y: scroll;
+}
+#qari{
+    height: 200px;
+    overflow-y: scroll;
+}
+@media (max-width:767px) {
+    #play,#back,#pause,#next{
+        font-size: 45px;
+    }
+}
