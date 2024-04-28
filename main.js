@@ -203,7 +203,11 @@ function naksten(){
     savt.currentTime -= 10;
     
 }
-function downloadSura(id){
-  document.getElementById(id).setAttribute("href", savt.src);
-
+function downloadSura() {
+  // احصل على عنصر الرابط
+  var link = document.getElementById('download');
+  // قم بتعيين الرابط الصحيح للتحميل
+  link.setAttribute('href', savt.src);
+  // قم بتعيين اسم الملف الذي يتم تنزيله
+  link.setAttribute('download', `${text.innerHTML}`);
 }
