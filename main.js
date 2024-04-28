@@ -203,3 +203,7 @@ function naksten(){
     savt.currentTime -= 10;
     
 }
+function downloadSura(id){
+  document.getElementById(id).setAttribute("href", savt.src);
+
+}
